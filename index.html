@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pratyush Kumar - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="left">My Portfolio</div>
+        <div class="right">
+          <ul>
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Projects</a></li>
+            <li><a href="#contact">Contact Me</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="firstSection">
+        <div class="leftSection">
+          Hi,<br />
+          My name is <span class="purple">Pratyush</span>
+          <div>and I am a Web Developer.</div>
+          <div>Expert in:</div>
+          <span id="element"></span>
+        </div>
+        <div class="rightSection">
+          <img src="OIP.png" alt="" />
+        </div>
+      </section>
+      <hr />
+      <section class="secondSection">
+        <span class="text-gray">How did I get here</span>
+        <h1>Learning Experience</h1>
+        <div class="box">
+          <div class="vertical">
+            <div class="vertical-title">HTML</div>
+            <div class="vertical-desc">
+              Learnt HTML in the first year of the college. Also made use of the
+              knowledge in the project making.
+            </div>
+          </div>
+          <div class="vertical">
+            <div class="vertical-title">JavaScript</div>
+            <div class="vertical-desc">
+              Learnt JS in the first year of the college. Also made use of the
+              knowledge in the project making.
+            </div>
+          </div>
+          <div class="vertical">
+            <div class="vertical-title">CSS</div>
+            <div class="vertical-desc">
+              Learnt CSS in the first year of the college. Also made use of the
+              knowledge in the project making.
+            </div>
+          </div>
+        </div>
+        <img src="LOGO.png" alt="" />
+      </section>
+      <hr />
+      <!----about-->
+      <div id="about">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/user.png" alt="">
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>Highly driven recent engineering
+              graduate seeking a full-time position in
+              finance where I can lend my
+              knowledge of computer science to
+              help your organization improve
+              profitability. A well-organized, creative
+              and goal-oriented graduate
+              possessing excellent communication,
+              problem-solving and leadership skills
+              with a flair to explore suitable avenues
+              in Computer Science Engineering
+              while developing advanced projects
+              with efficiency and quality.</p>
+
+              <div class="tab-titles">
+                <p class="tab-links active-links" onclick="opentab('Skills')">Skills</p>
+                <p class="tab-links" onclick="opentab('Educations')">Educations</p>
+                <p class="tab-links" onclick="opentab('Projects')">Projects</p>
+              </div>
+              <div class="tab-contents active-tab" id='Skills'>
+                <ul>
+                  <li><span>HTML</span></li>
+                  <li><span>CSS</span></li>
+                  <LI><span>JavaScript</span></LI>
+                </ul>
+              </div>
+              <div class="tab-contents" id='Educations'>
+                <ul>
+                  <li><span>Intermediate- 76.2%</span></li>
+                  <li><span>Matriculate- 83.2%</span></li>
+                  <LI><span>Graduation- 7.9CGPA</span></LI>
+                </ul>
+              </div>
+              <div class="tab-contents" id='Projects'>
+                <ul>
+                  <li><span>Student Result Examination Center</span></li>
+                  <li><span>Clone Hotstar Website</span></li>
+                  <LI><span>Tourism Website</span></LI>
+                </ul>
+              </div>
+
+          </div>
+
+        </div>
+      </div>
+      <hr />
+      <div id="portfolio">
+        <div class="container">
+          <h1 class="sub-title">My Projects</h1>
+          <div class="work-list">
+            <div class="work">
+              <img src="images/work-1.png" alt="">
+              <div class="layer">
+                <h3>Student Result Management System</h3>
+                <p>The SRMS helps to manage the academic performance
+                  of the student in a effective and convinient manner.
+                </p>
+                <a href="#"><i class="fa-solid fa-link"></i></a>
+              </div>
+            </div>
+            <div class="work">
+              <img src="images/work-2.png" alt="">
+              <div class="layer">
+                <h3>Hotstar-Clone website</h3>
+                <p>The website works in the similar manner
+                  as Hotstar.
+                </p>
+                <a href="#"><i class="fa-solid fa-link"></i></a>
+              </div>
+            </div>
+            <div class="work">
+              <img src="images/work-3.png" alt="">
+              <div class="layer">
+                <h3>Tourism website</h3>
+                <p>The website helps to manage the tourism
+                  planning of the users by providing details 
+                  about best places to visit according to 
+                  season and budget.
+                </p>
+                <a href="#"><i class="fa-solid fa-link"></i></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <div id="contact">
+        <div class="container">
+          <div class="row">
+            <div class="contact-left">
+              <h1 class="sub-title">Contact Me</h1>
+              <p>Contact@example.com</p>
+              <p>+91-9905963899</p>
+              <div class="social-icons">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+              </div>
+              <a href="images/my-cv.pdf" download class="btn">Download CV</a>
+            </div>
+            <div class="contact-right">
+              <form name="submit-to-google-sheet">
+                <input type="text" name="Name" placeholder="Your name" required>
+                <input type="email" name="email" placeholder="Your email" required>
+                <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                <button type="submit" class="btn">Submit</button>
+              </form>
+              <span id="msg"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </main>
+    <footer>
+      <div class="cpoyright">
+        <p>Copyright @ Pratyush || All rights reserved.</p>
+      </div>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed("#element", {
+        strings: ["HTML", "CSS", "JavaScript"],
+        typeSpeed: 50,
+      });
+
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+
+      function opentab(tabname){
+        for(tablink of tablinks){
+          tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+    <script>
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbwrwhzItgiTOTvpCTwSil8sQOYaXm9RnU7FRInFQRwouq2ZAyA8z8cUvQtvCRELUM2FIA/exec'
+      const form = document.forms['submit-to-google-sheet']
+      const msg= document.getElementById("msg")
+
+      form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+          .then(response => {
+            msg.innerHTML= "Message sent Successfully"
+            setTimeout(function(){
+              msg.innerHTML=""
+            },5000)
+            form.reset()
+          })
+          .catch(error => console.error('Error!', error.message))
+      })
+    </script>
+  </body>
+</html>
